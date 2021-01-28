@@ -27,6 +27,12 @@ component {
 			};
 		} );
 
+		route(
+			pattern : "/api/contacts",
+			target  : "contacts.index",
+			name    : "api.contacts"
+		);
+
 		// Conventions based routing
 		route( ":handler/:action?" ).end();
 	}
