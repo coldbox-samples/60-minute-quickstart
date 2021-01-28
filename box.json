@@ -1,0 +1,13 @@
+{
+    "dependencies":{
+        "coldbox":"^6.2.2+1396"
+    },
+    "installPaths":{
+        "coldbox":"coldbox/"
+    },
+    "location":"",
+    "name":"MyApp",
+    "scripts":{},
+    "slug":"myapp",
+    "version":"1.0.0"
+}
