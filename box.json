@@ -1,13 +1,14 @@
 {
+    "name":"60-Minute-Quickstart",
+    "slug":"60-minute-quickstart",
+    "version":"1.0.0",
     "dependencies":{
-        "coldbox":"^6.2.2+1396"
+        "coldbox":"^6.0.0",
+        "testbox":"*"
     },
     "installPaths":{
-        "coldbox":"coldbox/"
+        "coldbox":"coldbox/",
+        "testbox":"testbox/"
     },
-    "location":"",
-    "name":"MyApp",
-    "scripts":{},
-    "slug":"myapp",
-    "version":"1.0.0"
+    "scripts":{}
 }
