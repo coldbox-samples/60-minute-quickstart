@@ -42,6 +42,12 @@ component {
 		// Hello route
 		route( "/hello/:name" ).as( "hello" ).to( "hello" );
 
+		// RESTFul Route
+		route( "/api/contacts" )
+			.as( "api.contacts" )
+			.rc( "format" , "json" )
+			.to( "contacts.data" );
+
 		// Conventions-Based Routing
 		route( ":handler/:action?" ).end();
 	}

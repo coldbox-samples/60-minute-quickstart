@@ -6,4 +6,15 @@ component{
 		prc.aContacts = contactService.getAll();
         event.setView( "contacts/index" );
     }
+
+	any function data( event, rc, prc ){
+		// Auto marshall data
+		// return contactService.getAll();
+		prc.aContacts = contactService.getAll();
+		event.renderData(
+			data=prc.aContacts,
+			formats="xml,json,pdf,html",
+			formatsView = "contacts/index"
+		);
+	}
 }
