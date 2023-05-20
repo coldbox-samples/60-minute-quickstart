@@ -2,8 +2,9 @@ component {
 
 	/**
 	 * Configure the ColdBox App For Production
+	 * https://coldbox.ortusbooks.com/getting-started/configuration
 	 */
-	function configure() {
+	function configure(){
 		/**
 		 * --------------------------------------------------------------------------
 		 * ColdBox Directives
@@ -171,13 +172,9 @@ component {
 	/**
 	 * Development environment
 	 */
-	function development() {
+	function development(){
 		// coldbox.customErrorTemplate = "/coldbox/system/exceptions/BugReport.cfm"; // static bug reports
 		coldbox.customErrorTemplate = "/coldbox/system/exceptions/Whoops.cfm"; // interactive bug report
-		coldbox.handlerCaching = false;
-		coldbox.handlersIndexAutoReload = true;
-		coldobx.eventCaching = false;
-		coldbox.viewCaching = false;
 	}
 
 }

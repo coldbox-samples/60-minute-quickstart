@@ -1,1 +1,3 @@
-<h1>footer view</h1>
+<cfoutput>
+<small>I am a funky footer generated at #now()# running in #getSetting( 'environment' )#</small>
+</cfoutput>

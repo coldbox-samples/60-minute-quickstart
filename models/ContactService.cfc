@@ -1,7 +1,7 @@
 /**
  * I am a new Model Object
  */
-component singleton accessors="true"{
+component singleton accessors="true" {
 
 	// Properties
 	property name="data" type="array";
@@ -11,19 +11,18 @@ component singleton accessors="true"{
 	 */
 	ContactService function init(){
 		variables.data = [
-            { "id"=1, "name"="coldbox" },
-            { "id"=2, "name"="superman" },
-            { "id"=3, "name"="batman" }
-        ];
+			{ "id" : 1, "name" : "coldbox" },
+			{ "id" : 2, "name" : "superman" },
+			{ "id" : 3, "name" : "batman" }
+		];
 		return this;
 	}
 
 	/**
-	 * getAll
+	 * Get all the contacts
 	 */
 	function getAll(){
 		return variables.data;
 	}
-
 
 }
